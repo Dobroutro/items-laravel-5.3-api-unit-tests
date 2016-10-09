@@ -70,3 +70,7 @@ If you use authomatic laravel seeding or sample database install, a change in te
 	- Home page test - test/HomeTest.php
 	- Register and Login tests - tests/RegistrationLoginTest.php
 	- API tests - test/ApiTest.php
+
+in project directorie execute:
+
+phpunit
