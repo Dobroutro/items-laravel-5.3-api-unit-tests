@@ -42,9 +42,22 @@ If you use authomatic laravel seeding or sample database install, a change in te
 
 # Description 
 - The Idea was to build sample Items API with basis token authentication.
+
 	List of the api resources:
+
 	GET|HEAD  | api/v1/items             | items.index   | App\Http\Controllers\ItemController@index                            
-	POST      | api/v1/items             | items.store   | App\Http\Controllers\ItemController@store                              GET|HEAD  | api/v1/items/create      | items.create  | App\Http\Controllers\ItemController@create                             GET|HEAD  | api/v1/items/{item}      | items.show    | App\Http\Controllers\ItemController@show                                PUT|PATCH | api/v1/items/{item}      | items.update  | App\Http\Controllers\ItemController@update                              DELETE    | api/v1/items/{item}      | items.destroy | App\Http\Controllers\ItemController@destroy                             GET|HEAD  | api/v1/items/{item}/edit | items.edit    | App\Http\Controllers\ItemController@edit   
+
+	POST      | api/v1/items             | items.store   | App\Http\Controllers\ItemController@store                              
+
+	GET|HEAD  | api/v1/items/create      | items.create  | App\Http\Controllers\ItemController@create                             
+
+	GET|HEAD  | api/v1/items/{item}      | items.show    | App\Http\Controllers\ItemController@show                                
+
+	PUT|PATCH | api/v1/items/{item}      | items.update  | App\Http\Controllers\ItemController@update                              
+
+	DELETE    | api/v1/items/{item}      | items.destroy | App\Http\Controllers\ItemController@destroy                             
+	
+	GET|HEAD  | api/v1/items/{item}/edit | items.edit    | App\Http\Controllers\ItemController@edit   
 
 - Login and register functionalities added with default Laravel tools for convinience
 - The home controller after login loads the API entries and manipulates them using the API resource 
