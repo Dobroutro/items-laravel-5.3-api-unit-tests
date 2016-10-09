@@ -84,3 +84,15 @@ Stack trace:
 #10 /var/www/html/web/itemsApiGit/public/index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
 #11 /var/www/html/web/itemsApiGit/server.php(21): require_once('/var/www/html/w...')
 #12 {main}  
+[2016-10-09 07:55:18] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "routes" is not defined.
+
+Did you mean one of these?
+    route:cache
+    route:clear
+    route:list in /var/www/html/web/itemsApiGit/vendor/symfony/console/Application.php:536
+Stack trace:
+#0 /var/www/html/web/itemsApiGit/vendor/symfony/console/Application.php(184): Symfony\Component\Console\Application->find('routes')
+#1 /var/www/html/web/itemsApiGit/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/html/web/itemsApiGit/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/web/itemsApiGit/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
