@@ -41,7 +41,7 @@ If you use authomatic laravel seeding or sample database install, a change in te
 
 
 # Description 
-- The Idea was to build sample Items API with basis token authentication.
+- The Idea was to build sample Items API with authentication.
 
 	List of the api resources:
 
@@ -56,12 +56,17 @@ If you use authomatic laravel seeding or sample database install, a change in te
 	PUT|PATCH | api/v1/items/{item}      | items.update  | App\Http\Controllers\ItemController@update                              
 
 	DELETE    | api/v1/items/{item}      | items.destroy | App\Http\Controllers\ItemController@destroy                             
-	
+
 	GET|HEAD  | api/v1/items/{item}/edit | items.edit    | App\Http\Controllers\ItemController@edit   
 
 - Login and register functionalities added with default Laravel tools for convinience
+  	- login
+    - register
+    - forgotten password
+
 - The home controller after login loads the API entries and manipulates them using the API resource 
+	
 - PHP Unit Tests added for testing the API future changes
-	- Home page test
-	- Register and Login tests
-	- API tests
+	- Home page test - test/HomeTest.php
+	- Register and Login tests - tests/RegistrationLoginTest.php
+	- API tests - test/ApiTest.php
