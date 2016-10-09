@@ -71,6 +71,6 @@ If you use authomatic laravel seeding or sample database install, a change in te
 	- Register and Login tests - tests/RegistrationLoginTest.php
 	- API tests - test/ApiTest.php
 
-in project directorie execute:
+	In project's directory execute:
 
-phpunit
+	phpunit
