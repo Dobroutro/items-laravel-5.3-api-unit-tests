@@ -20,6 +20,10 @@
     <script src="{{ asset('/app/helpers/itemHelper.js') }}"></script>
     <!-- App Controller -->
     <script src="{{ asset('/app/controllers/ItemController.js') }}"></script>
+    <script type="text/javascript">
+        var api_token = "{!! Auth::user()->api_token;!!}";
+        var server_url = "{!! Config::get('app.url') !!}";
+    </script>
 </head>
 <body ng-app="main-App">
     <nav class="navbar navbar-default">
