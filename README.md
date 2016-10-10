@@ -1,5 +1,5 @@
 # items-laravel-5.3-api-unit-tests
-Items API with Authentication and Unit tests using Laravel 5.3 and Angularjs for example test implementation of the API.
+Items API with Authentication and Unit tests using Laravel 5.3 and Angularjs for example test implementation of the API using the api_token authentication.
 
 
 # Installation 
@@ -32,8 +32,7 @@ sample_database.sql
 
 
 # Angularjs auth config 
-Angularjs module should be authenticated with the "api_token" of some of the available users 
-If you use authomatic laravel seeding or sample database install, a change in public/app/routes.js api_token var will not be necessary, otherwise just update it with the api_token value of some of the new added users 
+Angularjs module should be authentication and server request variables are loaded automatically as vars from the system in the home template
 
 # PHP Unit Tests
 Unit test use also api_token of some available users
